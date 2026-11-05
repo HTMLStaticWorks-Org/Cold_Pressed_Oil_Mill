@@ -16,6 +16,7 @@
 
   const STORAGE_KEYS = {
     THEME: "marachekku_theme",
+    RTL: "marachekku_rtl",
     CART: "marachekku_cart_v1",
     WISHLIST: "marachekku_wishlist_v1"
   };
@@ -81,6 +82,43 @@
       btn.innerHTML = isDark
         ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>'
         : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+    });
+  }
+
+  // =========================================================================
+  // 1B. RTL LAYOUT SYSTEM
+  // =========================================================================
+  function initRTL() {
+    const savedRTL = localStorage.getItem(STORAGE_KEYS.RTL);
+    const initialDir = savedRTL === "rtl" ? "rtl" : "ltr";
+    applyRTL(initialDir);
+
+    document.querySelectorAll("[data-rtl-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("dir") === "rtl" ? "rtl" : "ltr";
+        const next = current === "rtl" ? "ltr" : "rtl";
+        applyRTL(next);
+        try {
+          localStorage.setItem(STORAGE_KEYS.RTL, next);
+        } catch (e) {}
+      });
+    });
+  }
+
+  function applyRTL(direction) {
+    const isRTL = direction === "rtl";
+    if (isRTL) {
+      document.documentElement.setAttribute("dir", "rtl");
+    } else {
+      document.documentElement.removeAttribute("dir");
+    }
+
+    document.querySelectorAll("[data-rtl-toggle]").forEach((btn) => {
+      btn.setAttribute("aria-pressed", isRTL ? "true" : "false");
+      btn.setAttribute("title", isRTL ? "Switch to LTR" : "Switch to RTL");
+      btn.classList.toggle("is-active", isRTL);
+      // Strictly only "RTL" text inside button
+      btn.textContent = "RTL";
     });
   }
 
@@ -201,7 +239,9 @@
     const currentSize = product.sizes[sizeIdx] || product.sizes[0];
     const inWishlist = wishlist.includes(product.id);
 
-    const sizeChipsHTML = product.sizes
+    // Limit visible package size tags to exactly 2 per card
+    const displaySizes = product.sizes.slice(0, 2);
+    const sizeChipsHTML = displaySizes
       .map(
         (s, idx) =>
           `<button type="button" class="size-chip ${idx === sizeIdx ? "active" : ""}" data-size-select="${product.id}" data-size-index="${idx}">${s.label}</button>`
@@ -611,7 +651,7 @@
 
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem;">
             <button type="button" class="btn btn-primary" data-add-to-cart="${product.id}">Add to Sample / Order List</button>
-            <a href="about-contact.html?oil=${encodeURIComponent(product.categoryLabel)}&pack=${encodeURIComponent(currentSize.label)}#bulk-enquiry" class="btn btn-gold">Bulk / Trade Enquiry</a>
+            <a href="contact.html?oil=${encodeURIComponent(product.categoryLabel)}&pack=${encodeURIComponent(currentSize.label)}#bulk-enquiry" class="btn btn-gold">Bulk / Trade Enquiry</a>
           </div>
 
           <div class="spec-list">
@@ -665,6 +705,15 @@
 
   function openDrawer(drawerId) {
     closeProductModal();
+    const navMenu = document.querySelector("[data-nav-menu]");
+    const hamburger = document.querySelector("[data-hamburger]");
+    if (navMenu && navMenu.classList.contains("mobile-open")) {
+      navMenu.classList.remove("mobile-open");
+      if (hamburger) {
+        hamburger.setAttribute("aria-expanded", "false");
+        hamburger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+      }
+    }
     document.querySelectorAll(".side-drawer").forEach((d) => d.classList.remove("open"));
     const drawer = document.getElementById(drawerId);
     const backdrop = document.getElementById("global-drawer-backdrop");
@@ -834,7 +883,7 @@
       </div>
       <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-bottom: 1rem;">Transfer your selected items directly to our Mill Enquiry Desk for retail dispatch or wholesale pricing.</p>
       <div style="display: grid; gap: 0.5rem;">
-        <a href="about-contact.html?cartSummary=${summaryQuery}#bulk-enquiry" class="btn btn-primary" style="width: 100%;">Proceed to Order / Enquiry Form</a>
+        <a href="contact.html?cartSummary=${summaryQuery}#bulk-enquiry" class="btn btn-primary" style="width: 100%;">Proceed to Order / Enquiry Form</a>
         <button type="button" class="btn btn-secondary btn-sm" id="clear-cart-btn" style="width: 100%;">Clear List</button>
       </div>
     `;
@@ -1056,6 +1105,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     ensureSharedModalsExist();
     initTheme();
+    initRTL();
     initNavigation();
     renderFeaturedProducts();
     renderHome2Collection();

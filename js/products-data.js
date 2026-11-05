@@ -38,7 +38,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "sesame-nallennai",
-    name: "Traditional Sesame Oil (Nallennai)",
+    name: "Traditional Sesame Oil",
     tamilName: "Ellu Ennai • Palm Jaggery Conditioned",
     category: "sesame",
     categoryLabel: "Sesame Oil",
@@ -107,7 +107,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "castor-amanakku",
-    name: "Traditional Cold-Pressed Castor Oil",
+    name: "Cold-Pressed Castor Oil",
     tamilName: "Amanakku / Vilakkennai • Thick Unrefined Grade",
     category: "castor",
     categoryLabel: "Castor Oil",
@@ -130,7 +130,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "groundnut-heirloom",
-    name: "Heirloom Country Groundnut Oil",
+    name: "Country Groundnut Oil",
     tamilName: "Nattu Kadalai Ennai • Small-Batch Reserve",
     category: "groundnut",
     categoryLabel: "Groundnut Oil",
@@ -152,7 +152,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "sesame-white-unroasted",
-    name: "Unroasted White Sesame Oil",
+    name: "White Sesame Oil",
     tamilName: "Vellai Ellu Ennai • Delicate Culinary Press",
     category: "sesame",
     categoryLabel: "Sesame Oil",
@@ -174,7 +174,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "coconut-virgin-suncured",
-    name: "First-Press Sun-Cured Coconut Oil",
+    name: "Sun-Cured Coconut Oil",
     tamilName: "Kanni Thengai Ennai • Gentle First Batch",
     category: "coconut",
     categoryLabel: "Coconut Oil",
@@ -196,7 +196,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "other-sweet-almond",
-    name: "Cold-Pressed Sweet Almond Oil",
+    name: "Sweet Almond Oil",
     tamilName: "Badam Ennai • Artisanal Small-Batch Press",
     category: "other",
     categoryLabel: "Other Traditional Oils",
@@ -217,7 +217,7 @@ window.MARACHEKKU_PRODUCTS = [
   },
   {
     id: "other-neem-iluppai",
-    name: "Traditional Neem & Iluppai Lamp Oil",
+    name: "Neem & Iluppai Oil",
     tamilName: "Veppennai & Iluppai • Heritage Utility & Lamp Press",
     category: "other",
     categoryLabel: "Other Traditional Oils",
