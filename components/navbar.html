@@ -1,0 +1,109 @@
+<!-- ==========================================================================
+     MARACHEKKU NATURALS — Reusable Mandatory Navbar Component
+     Structure: Home ▾ | Products ▾ | Our Process | About Us | Contact
+     Right Controls: Search | Wishlist | Shopping Cart | Theme Toggle | Enquire Now
+     ========================================================================== -->
+<div class="announcement-bar" role="region" aria-label="Mill Announcement">
+  <div class="container-wide announcement-inner">
+    <span><i class="announcement-dot" aria-hidden="true"></i> Traditional Vagai-Wood Marachekku Extraction • 100% Unrefined &amp; Naturally Settled</span>
+    <span>Retail Glass Bottles &amp; Bulk 5L / 15L Tin Supply • <a href="about-contact.html#bulk-enquiry" style="text-decoration: underline; color: var(--color-gold-light); font-weight: 600;">Request Wholesale Quote →</a></span>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="navbar-container">
+    <a href="index.html" class="brand-logo" aria-label="MARACHEKKU NATURALS Home">
+      <img src="assets/icons/logo-mark.svg" alt="" class="brand-logo-icon" width="44" height="44">
+      <div class="brand-logo-text">
+        <span class="brand-name">MARACHEKKU NATURALS</span>
+        <span class="brand-tagline-mini">Pure Oils. Honest Traditions.</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-menu" data-nav-menu>
+        <!-- Home Dropdown -->
+        <li class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" data-dropdown-toggle aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="dropdown-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="dropdown-menu" aria-label="Home Layouts">
+            <li>
+              <a href="index.html" class="dropdown-link">
+                <span>Home — Product Showcase</span>
+                <span class="dropdown-link-tag">Primary</span>
+              </a>
+            </li>
+            <li>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home-2 — Heritage &amp; Craft</span>
+                <span class="dropdown-link-tag">Editorial</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Products Dropdown -->
+        <li class="nav-item has-dropdown">
+          <a href="products.html" class="nav-link" data-dropdown-toggle aria-haspopup="true" aria-expanded="false">
+            Products
+            <svg class="dropdown-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="dropdown-menu" aria-label="Oil Categories">
+            <li><a href="products.html?category=all" class="dropdown-link"><span>All Oils</span><span class="dropdown-link-tag">10</span></a></li>
+            <li><a href="products.html?category=groundnut" class="dropdown-link"><span>Groundnut Oil</span></a></li>
+            <li><a href="products.html?category=sesame" class="dropdown-link"><span>Sesame Oil</span></a></li>
+            <li><a href="products.html?category=coconut" class="dropdown-link"><span>Coconut Oil</span></a></li>
+            <li><a href="products.html?category=mustard" class="dropdown-link"><span>Mustard Oil</span></a></li>
+            <li><a href="products.html?category=castor" class="dropdown-link"><span>Castor Oil</span></a></li>
+            <li><a href="products.html?category=other" class="dropdown-link"><span>Other Traditional Oils</span></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="process.html" class="nav-link">Our Process</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about-contact.html#about" class="nav-link">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about-contact.html#contact" class="nav-link">Contact</a>
+        </li>
+
+        <li class="nav-item mobile-nav-cta-item" style="display: none;">
+          <a href="about-contact.html#bulk-enquiry" class="btn btn-primary">Enquire Now</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="icon-btn" data-open-search aria-label="Search cold-pressed oils" title="Search Oils">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+
+      <button type="button" class="icon-btn" data-open-wishlist aria-label="Open saved wishlist" title="Saved Oils Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span class="badge-count" data-wishlist-badge data-count="0"></span>
+      </button>
+
+      <button type="button" class="icon-btn" data-open-cart aria-label="Open order and sample list" title="Sample &amp; Order List">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span class="badge-count" data-cart-badge data-count="0"></span>
+      </button>
+
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle light and dark theme" title="Toggle Theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+
+      <a href="about-contact.html#bulk-enquiry" class="btn btn-primary nav-cta">Enquire Now</a>
+
+      <button type="button" class="hamburger-btn" data-hamburger aria-label="Toggle mobile navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+

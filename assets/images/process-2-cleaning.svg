@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="sunCourtyard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E6"/>
+      <stop offset="55%" stop-color="#F2E3C6"/>
+      <stop offset="100%" stop-color="#DEC8A4"/>
+    </linearGradient>
+    <filter id="procShadow2" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#2B1E16" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="560" fill="url(#sunCourtyard)"/>
+  <!-- Warm Sun Glow in Top Right -->
+  <circle cx="680" cy="90" r="140" fill="#FFE58F" opacity="0.5"/>
+
+  <!-- Woven Reed Drying Mat 1 (Left - Sun-Dried Coconut Copra) -->
+  <g filter="url(#procShadow2)" transform="translate(65, 130)">
+    <rect x="0" y="0" width="310" height="340" rx="8" fill="#D5B887" stroke="#A68553" stroke-width="4"/>
+    <line x1="15" y1="0" x2="15" y2="340" stroke="#8C4A27" stroke-width="3"/>
+    <line x1="295" y1="0" x2="295" y2="340" stroke="#8C4A27" stroke-width="3"/>
+    <!-- Split Copra Halves Drying -->
+    <g transform="translate(35, 35)">
+      <circle cx="55" cy="55" r="42" fill="#5C3B24"/><circle cx="55" cy="55" r="33" fill="#FAF6EE"/>
+      <circle cx="175" cy="55" r="42" fill="#5C3B24"/><circle cx="175" cy="55" r="33" fill="#FAF6EE"/>
+      <circle cx="60" cy="160" r="42" fill="#5C3B24"/><circle cx="60" cy="160" r="33" fill="#FAF6EE"/>
+      <circle cx="175" cy="165" r="42" fill="#5C3B24"/><circle cx="175" cy="165" r="33" fill="#FAF6EE"/>
+      <circle cx="115" cy="245" r="40" fill="#5C3B24"/><circle cx="115" cy="245" r="31" fill="#FAF6EE"/>
+    </g>
+  </g>
+
+  <!-- Woven Reed Drying Mat 2 (Right - Cleaned Sesame & Groundnuts) -->
+  <g filter="url(#procShadow2)" transform="translate(425, 130)">
+    <rect x="0" y="0" width="310" height="340" rx="8" fill="#CCA974" stroke="#9B7A47" stroke-width="4"/>
+    <line x1="15" y1="0" x2="15" y2="340" stroke="#1E3A2B" stroke-width="3"/>
+    <line x1="295" y1="0" x2="295" y2="340" stroke="#1E3A2B" stroke-width="3"/>
+    <!-- Evenly Spread Seeds -->
+    <rect x="35" y="35" width="240" height="125" rx="12" fill="#E8D7B7"/>
+    <text x="155" y="102" text-anchor="middle" fill="#5A4A3E" font-family="Georgia, serif" font-size="14" font-weight="bold">Sun-Cured Sesame</text>
+    <rect x="35" y="180" width="240" height="125" rx="12" fill="#B55B38"/>
+    <text x="155" y="248" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="14" font-weight="bold">Cleaned Groundnuts</text>
+  </g>
+
+  <!-- Step Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="205" height="40" rx="20" fill="#1E3A2B"/>
+    <text x="102" y="25" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1.5">STEP 02 • SUN-CURING</text>
+  </g>
+</svg>
+

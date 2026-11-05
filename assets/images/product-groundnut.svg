@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bgGroundnut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F1E3"/>
+      <stop offset="60%" stop-color="#EDE1CC"/>
+      <stop offset="100%" stop-color="#DDD0B8"/>
+    </linearGradient>
+    <linearGradient id="oilGroundnut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#E5A220"/>
+      <stop offset="100%" stop-color="#B0740B"/>
+    </linearGradient>
+    <radialGradient id="glowGroundnut" cx="50%" cy="55%" r="48%">
+      <stop offset="0%" stop-color="#FFF099" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#E5A220" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#B0740B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="prodShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="15" flood-color="#2B1E16" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGroundnut)"/>
+  <circle cx="400" cy="390" r="260" fill="#FFFDF8" opacity="0.55"/>
+
+  <!-- Travertine Stone Plinth -->
+  <g filter="url(#prodShadow)" transform="translate(130, 600)">
+    <path d="M30,0 H510 L540,42 H0 Z" fill="#EFE6D8"/>
+    <rect x="0" y="42" width="540" height="85" rx="4" fill="#D8C8B0"/>
+    <line x1="0" y1="42" x2="540" y2="42" stroke="#FAF6EE" stroke-width="2"/>
+  </g>
+
+  <!-- Main 1L Artisanal Glass Bottle of Groundnut Oil -->
+  <g filter="url(#prodShadow)" transform="translate(275, 105)">
+    <!-- Wooden Stopper -->
+    <rect x="92" y="0" width="66" height="36" rx="8" fill="#3D2618"/>
+    <rect x="98" y="36" width="54" height="18" fill="#C8922B"/>
+    <!-- Bottle Body -->
+    <path d="M94,54 H156 V125 C156,150 225,175 235,228 V495 C235,522 214,540 186,540 H64 C36,540 15,522 15,495 V228 C25,175 94,150 94,125 Z" fill="url(#oilGroundnut)" stroke="#FFFFFF" stroke-width="3"/>
+    <ellipse cx="125" cy="380" rx="75" ry="125" fill="url(#glowGroundnut)"/>
+    <ellipse cx="125" cy="126" rx="30" ry="6" fill="#FFF3B0"/>
+    <!-- Specular Highlight -->
+    <path d="M32,235 V485" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-opacity="0.48"/>
+    <path d="M218,235 V485" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-opacity="0.35"/>
+
+    <!-- Branded Label -->
+    <g transform="translate(38, 250)">
+      <rect x="0" y="0" width="174" height="215" rx="6" fill="#FAF6EE" stroke="#1E3A2B" stroke-width="2"/>
+      <rect x="6" y="6" width="162" height="203" rx="3" fill="none" stroke="#C8922B" stroke-width="1"/>
+      <rect x="16" y="18" width="142" height="22" rx="3" fill="#1E3A2B"/>
+      <text x="87" y="33" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="9" font-weight="bold" letter-spacing="1.5">MARACHEKKU NATURALS</text>
+      <circle cx="87" cy="68" r="16" fill="#F2EAD9" stroke="#C8922B" stroke-width="1.5"/>
+      <path d="M87,57 C87,57 80,65 80,70 C80,74 83,77 87,77 C91,77 94,74 94,70 C94,65 87,57 87,57 Z" fill="#E5A220"/>
+      <text x="87" y="108" text-anchor="middle" fill="#2B1E16" font-family="Georgia, serif" font-size="16.5" font-weight="bold">GROUNDNUT OIL</text>
+      <text x="87" y="127" text-anchor="middle" fill="#5C7052" font-family="Georgia, serif" font-style="italic" font-size="11.5">Kadalai Ennai</text>
+      <line x1="40" y1="140" x2="134" y2="140" stroke="#C8922B" stroke-width="1.2"/>
+      <text x="87" y="158" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="9" letter-spacing="1">WOOD-PRESSED • UNREFINED</text>
+      <text x="87" y="175" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="8.5">Sun-Dried Pollachi Peanuts</text>
+      <rect x="52" y="186" width="70" height="18" rx="9" fill="#F2EAD9"/>
+      <text x="87" y="198" text-anchor="middle" fill="#1E3A2B" font-family="sans-serif" font-size="9" font-weight="bold">1 LITRE</text>
+    </g>
+  </g>
+
+  <!-- Whole Peanut Pods & Red-Skin Groundnut Kernels on Plinth -->
+  <g filter="url(#prodShadow)" transform="translate(175, 595)">
+    <!-- Whole Peanut Shells -->
+    <path d="M15,28 C5,18 22,2 40,10 C52,15 58,15 70,10 C88,2 105,18 95,28 C85,38 68,34 55,32 C42,34 25,38 15,28 Z" fill="#D4AE78" stroke="#9E7642" stroke-width="2"/>
+    <path d="M65,36 C55,26 72,10 90,18 C102,23 108,23 120,18 C138,10 155,26 145,36 C135,46 118,42 105,40 C92,42 75,46 65,36 Z" fill="#CCA36A" stroke="#8F6836" stroke-width="2" transform="rotate(12 105 28)"/>
+    <!-- Red-Skin Kernels -->
+    <ellipse cx="345" cy="30" rx="15" ry="10" fill="#A84C2C" transform="rotate(-15 345 30)"/>
+    <ellipse cx="372" cy="36" rx="14" ry="9.5" fill="#B55736" transform="rotate(20 372 36)"/>
+    <ellipse cx="398" cy="28" rx="15" ry="10" fill="#994123" transform="rotate(-8 398 28)"/>
+    <ellipse cx="422" cy="35" rx="13" ry="9" fill="#E5C18E" transform="rotate(15 422 35)"/>
+  </g>
+</svg>
+

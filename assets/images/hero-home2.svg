@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="millInterior" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231912"/>
+      <stop offset="50%" stop-color="#332419"/>
+      <stop offset="100%" stop-color="#1A120D"/>
+    </linearGradient>
+    <linearGradient id="windowSunRay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA0" stop-opacity="0.48"/>
+      <stop offset="45%" stop-color="#E5A93B" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#C8922B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="woodMortar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#362216"/>
+      <stop offset="35%" stop-color="#5E3C27"/>
+      <stop offset="70%" stop-color="#472D1D"/>
+      <stop offset="100%" stop-color="#25160E"/>
+    </linearGradient>
+    <linearGradient id="stoneMortarBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5C5349"/>
+      <stop offset="45%" stop-color="#8C8072"/>
+      <stop offset="85%" stop-color="#6A6055"/>
+      <stop offset="100%" stop-color="#474038"/>
+    </linearGradient>
+    <linearGradient id="goldStream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE47A"/>
+      <stop offset="50%" stop-color="#DDA022"/>
+      <stop offset="100%" stop-color="#9E680A"/>
+    </linearGradient>
+    <linearGradient id="brassUruli" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#785519"/>
+      <stop offset="35%" stop-color="#E8BE5D"/>
+      <stop offset="70%" stop-color="#BA8A2B"/>
+      <stop offset="100%" stop-color="#5C3F10"/>
+    </linearGradient>
+    <filter id="deepShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#0D0805" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Heritage Craft Room Backdrop -->
+  <rect width="1200" height="850" fill="url(#millInterior)"/>
+
+  <!-- Traditional Timber Ceiling Beams -->
+  <rect x="0" y="0" width="1200" height="48" fill="#18100B"/>
+  <rect x="140" y="48" width="36" height="580" fill="#1E140E" opacity="0.6"/>
+  <rect x="1020" y="48" width="36" height="580" fill="#1E140E" opacity="0.6"/>
+
+  <!-- Sunlit Lattice Window on Left Wall -->
+  <g transform="translate(70, 110)">
+    <rect x="0" y="0" width="190" height="290" rx="8" fill="#4A3423" stroke="#6E4E35" stroke-width="6"/>
+    <rect x="14" y="14" width="162" height="262" fill="#FFF3C4" opacity="0.85"/>
+    <!-- Wooden Window Bars -->
+    <line x1="68" y1="14" x2="68" y2="276" stroke="#362216" stroke-width="6"/>
+    <line x1="122" y1="14" x2="122" y2="276" stroke="#362216" stroke-width="6"/>
+    <line x1="14" y1="100" x2="176" y2="100" stroke="#362216" stroke-width="6"/>
+    <line x1="14" y1="190" x2="176" y2="190" stroke="#362216" stroke-width="6"/>
+  </g>
+
+  <!-- Volumetric Diagonal Sunlight Shaft Across the Chekku -->
+  <polygon points="84,124 246,124 1140,850 420,850" fill="url(#windowSunRay)"/>
+
+  <!-- Stone Mill Floor -->
+  <rect x="0" y="610" width="1200" height="240" fill="#2C221B"/>
+  <line x1="0" y1="610" x2="1200" y2="610" stroke="#4A3A2E" stroke-width="3"/>
+
+  <!-- Background Right: Burlap Sacks of Heirloom Oilseeds -->
+  <g filter="url(#deepShadow)" transform="translate(860, 420)">
+    <!-- Sack 1: Groundnuts -->
+    <path d="M20,60 C10,110 5,180 15,220 C40,235 135,235 160,220 C170,180 165,110 150,60 Z" fill="#9E825E"/>
+    <ellipse cx="85" cy="60" rx="66" ry="22" fill="#6E5438"/>
+    <ellipse cx="85" cy="58" rx="56" ry="16" fill="#B5653B"/>
+    <!-- Sack 2: Sesame Seeds -->
+    <path d="M125,85 C115,135 110,195 120,235 C145,248 235,248 260,235 C270,195 265,135 250,85 Z" fill="#8C704C"/>
+    <ellipse cx="188" cy="85" rx="64" ry="20" fill="#5A432B"/>
+    <ellipse cx="188" cy="83" rx="54" ry="15" fill="#E5D3B3"/>
+    <!-- Stencil Label on Burlap -->
+    <text x="85" y="150" text-anchor="middle" fill="#3B2818" font-family="Georgia, serif" font-size="13" font-weight="bold" letter-spacing="1.5">POLLACHI</text>
+    <text x="85" y="168" text-anchor="middle" fill="#3B2818" font-family="sans-serif" font-size="10" letter-spacing="1">GROUNDNUT</text>
+    <text x="188" y="170" text-anchor="middle" fill="#3B2818" font-family="Georgia, serif" font-size="12" font-weight="bold" letter-spacing="1.5">GINGELLY</text>
+  </g>
+
+  <!-- CENTERPIECE: Full-Scale Traditional Wooden & Stone Chekku Mill -->
+  <g filter="url(#deepShadow)" transform="translate(360, 95)">
+    <!-- Heavy Inclined Wooden Ulakkai (Pestle) -->
+    <path d="M250,10 C272,8 292,24 286,52 L238,315 L158,315 L212,40 C216,18 230,12 250,10 Z" fill="url(#woodMortar)"/>
+    <rect x="202" y="75" width="76" height="14" rx="4" transform="rotate(11 240 82)" fill="url(#brassUruli)"/>
+    <rect x="190" y="140" width="78" height="12" rx="4" transform="rotate(11 229 146)" fill="url(#brassUruli)"/>
+
+    <!-- Horizontal Curved Load Yoke Beam (Kanaikkal) -->
+    <path d="M195,210 Q380,245 495,360 L472,388 Q365,278 185,245 Z" fill="url(#woodMortar)"/>
+    <circle cx="210" cy="228" r="16" fill="url(#brassUruli)"/>
+
+    <!-- Vagai Wood Upper Mortar Drum -->
+    <ellipse cx="195" cy="315" rx="145" ry="32" fill="#2A190F"/>
+    <ellipse cx="195" cy="317" rx="122" ry="22" fill="#E3A329" opacity="0.9"/>
+    <path d="M50,315 H340 L318,470 H72 Z" fill="url(#woodMortar)"/>
+    <rect x="44" y="305" width="302" height="22" rx="6" fill="#472D1D" stroke="#C8922B" stroke-width="1.5"/>
+    <rect x="62" y="390" width="266" height="16" rx="4" fill="url(#brassUruli)"/>
+
+    <!-- Carved Granite & Wood Lower Plinth -->
+    <path d="M62,470 H328 L352,615 C354,630 340,642 320,642 H70 C50,642 36,630 38,615 L62,470 Z" fill="url(#stoneMortarBase)"/>
+    <rect x="55" y="462" width="280" height="18" rx="4" fill="#3B2518"/>
+
+    <!-- Wooden Oil Channel & Flowing Golden Oil -->
+    <path d="M305,435 L425,460 L418,484 L298,460 Z" fill="url(#brassUruli)"/>
+    <path d="M415,472 Q450,482 454,535 L454,630 L436,630 L436,535 Q434,494 408,480 Z" fill="url(#goldStream)"/>
+    <path d="M445,495 L445,625" stroke="#FFF8C9" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Large Brass Collection Vessel (Uruli) -->
+    <g transform="translate(365, 610)">
+      <ellipse cx="80" cy="16" rx="76" ry="20" fill="#4A320C"/>
+      <ellipse cx="80" cy="18" rx="68" ry="16" fill="url(#goldStream)"/>
+      <path d="M4,16 H156 L138,78 C132,96 108,106 80,106 C52,106 28,96 22,78 L4,16 Z" fill="url(#brassUruli)"/>
+      <!-- Ripples in Golden Oil -->
+      <ellipse cx="80" cy="18" rx="42" ry="8" fill="none" stroke="#FFF4B8" stroke-width="2" opacity="0.7"/>
+      <ellipse cx="80" cy="18" rx="20" ry="4" fill="#FFF4B8" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Foreground Left: Bamboo Winnowing Tray & Brass Oil Lamp -->
+  <g filter="url(#deepShadow)" transform="translate(95, 650)">
+    <ellipse cx="115" cy="45" rx="105" ry="38" fill="#C4A472" stroke="#8C6B3F" stroke-width="6"/>
+    <ellipse cx="115" cy="45" rx="88" ry="28" fill="#D8BA89"/>
+    <!-- Fresh Coconuts & Seeds on Tray -->
+    <circle cx="85" cy="42" r="24" fill="#52341E"/>
+    <circle cx="85" cy="42" r="18" fill="#FAF6EE"/>
+    <circle cx="138" cy="48" r="22" fill="#52341E"/>
+    <circle cx="138" cy="48" r="16" fill="#FAF6EE"/>
+  </g>
+</svg>
+

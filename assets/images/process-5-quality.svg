@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="procBg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4ECE0"/>
+      <stop offset="100%" stop-color="#DDD0BC"/>
+    </linearGradient>
+    <filter id="procShadow5" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2B1E16" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="560" fill="url(#procBg5)"/>
+  <rect x="0" y="420" width="800" height="140" fill="#C8B69C"/>
+
+  <!-- Glass Clarity Inspection Cylinder & Decanter -->
+  <g filter="url(#procShadow5)" transform="translate(135, 115)">
+    <rect x="35" y="15" width="75" height="315" rx="8" fill="#FFFFFF" fill-opacity="0.55" stroke="#FFFFFF" stroke-width="3"/>
+    <rect x="39" y="65" width="67" height="260" rx="5" fill="#E5A220"/>
+    <!-- Graduation Marks -->
+    <g stroke="#2B1E16" stroke-width="1.5" opacity="0.5">
+      <line x1="45" y1="100" x2="68" y2="100"/>
+      <line x1="45" y1="140" x2="62" y2="140"/>
+      <line x1="45" y1="180" x2="68" y2="180"/>
+      <line x1="45" y1="220" x2="62" y2="220"/>
+      <line x1="45" y1="260" x2="68" y2="260"/>
+    </g>
+    <rect x="15" y="325" width="115" height="16" rx="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Batch Inspection Log Card & Sensory Check -->
+  <g filter="url(#procShadow5)" transform="translate(340, 125)">
+    <rect x="0" y="0" width="375" height="315" rx="12" fill="#FAF6EE" stroke="#C8922B" stroke-width="2"/>
+    <rect x="24" y="24" width="327" height="38" rx="6" fill="#1E3A2B"/>
+    <text x="187" y="48" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="1.2">BATCH QUALITY REGISTER</text>
+
+    <!-- Checklist Items -->
+    <g transform="translate(32, 88)" font-family="sans-serif" font-size="13" fill="#2B1E16">
+      <circle cx="14" cy="10" r="10" fill="#1E3A2B"/>
+      <path d="M9,10 L13,14 L20,6" fill="none" stroke="#FAF6EE" stroke-width="2"/>
+      <text x="36" y="15" font-weight="bold">Natural Aroma &amp; Characteristic Flavour</text>
+
+      <g transform="translate(0, 48)">
+        <circle cx="14" cy="10" r="10" fill="#1E3A2B"/>
+        <path d="M9,10 L13,14 L20,6" fill="none" stroke="#FAF6EE" stroke-width="2"/>
+        <text x="36" y="15" font-weight="bold">Visual Clarity After Gravity Settling</text>
+      </g>
+
+      <g transform="translate(0, 96)">
+        <circle cx="14" cy="10" r="10" fill="#1E3A2B"/>
+        <path d="M9,10 L13,14 L20,6" fill="none" stroke="#FAF6EE" stroke-width="2"/>
+        <text x="36" y="15" font-weight="bold">Seed Cake (Punnakku) Dryness Check</text>
+      </g>
+
+      <g transform="translate(0, 144)">
+        <circle cx="14" cy="10" r="10" fill="#1E3A2B"/>
+        <path d="M9,10 L13,14 L20,6" fill="none" stroke="#FAF6EE" stroke-width="2"/>
+        <text x="36" y="15" font-weight="bold">Pressing Batch Date &amp; Lot Numbering</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Step Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="225" height="40" rx="20" fill="#1E3A2B"/>
+    <text x="112" y="25" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1.5">STEP 05 • QUALITY CHECKS</text>
+  </g>
+</svg>
+

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="procBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F0E4"/>
+      <stop offset="100%" stop-color="#E2D3BC"/>
+    </linearGradient>
+    <linearGradient id="steelDrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8B2A8"/>
+      <stop offset="30%" stop-color="#F2EFE9"/>
+      <stop offset="65%" stop-color="#D6D0C6"/>
+      <stop offset="100%" stop-color="#969086"/>
+    </linearGradient>
+    <linearGradient id="clearGoldenOil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCE072"/>
+      <stop offset="70%" stop-color="#D9981A"/>
+      <stop offset="100%" stop-color="#8A5706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="560" fill="url(#procBg4)"/>
+
+  <!-- Left: Stainless Steel Settling Vessel with Unbleached Cotton Cloth Filter -->
+  <g transform="translate(120, 115)">
+    <!-- Pouring Golden Oil From Brass Pitcher -->
+    <path d="M125,0 L125,95" stroke="#E5A220" stroke-width="16" stroke-linecap="round"/>
+    <path d="M125,0 L125,95" stroke="#FFF4B8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Vessel Body -->
+    <rect x="20" y="90" width="210" height="330" rx="12" fill="url(#steelDrum)" stroke="#8F887D" stroke-width="2"/>
+    <!-- Unbleached Gada Cotton Cloth Tied Over Rim -->
+    <path d="M12,85 H238 L228,132 Q125,168 22,132 Z" fill="#FAF6EE" stroke="#D4C3AA" stroke-width="2"/>
+    <line x1="14" y1="104" x2="236" y2="104" stroke="#8C4A27" stroke-width="3.5"/>
+    <text x="125" y="195" text-anchor="middle" fill="#2B1E16" font-family="Georgia, serif" font-size="14" font-weight="bold">Gada Cloth Straining</text>
+    <text x="125" y="218" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="11">Zero Chemical Bleaching</text>
+  </g>
+
+  <!-- Right: Transparent View of Natural Gravity Sedimentation (48–72 Hours) -->
+  <g transform="translate(430, 115)">
+    <rect x="20" y="50" width="220" height="370" rx="16" fill="url(#clearGoldenOil)" stroke="#FFFFFF" stroke-width="4"/>
+    <!-- Natural Seed Sediment Layer at Very Bottom -->
+    <path d="M22,380 H238 V405 C238,414 230,418 220,418 H40 C30,418 22,414 22,405 Z" fill="#5C3B20"/>
+    <!-- Clarified Upper Oil Zone Callout -->
+    <rect x="42" y="110" width="176" height="84" rx="8" fill="#FAF6EE" fill-opacity="0.92"/>
+    <text x="130" y="142" text-anchor="middle" fill="#1E3A2B" font-family="Georgia, serif" font-size="14" font-weight="bold">Natural Sun Settling</text>
+    <text x="130" y="164" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="11">48–72 Hours Gravity Rest</text>
+    <text x="130" y="180" text-anchor="middle" fill="#C8922B" font-family="sans-serif" font-size="10" font-weight="bold">CLARIFIED UPPER LAYER</text>
+
+    <text x="130" y="403" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="10" letter-spacing="1">FINE SEED SEDIMENT SETTLES</text>
+  </g>
+
+  <!-- Step Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="235" height="40" rx="20" fill="#1E3A2B"/>
+    <text x="117" y="25" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1.5">STEP 04 • NATURAL SETTLING</text>
+  </g>
+</svg>
+

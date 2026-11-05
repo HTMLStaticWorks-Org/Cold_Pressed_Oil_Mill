@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="procBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6EFE2"/>
+      <stop offset="100%" stop-color="#DFCDBA"/>
+    </linearGradient>
+    <linearGradient id="muramWeave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8BA84"/>
+      <stop offset="50%" stop-color="#C29F67"/>
+      <stop offset="100%" stop-color="#A6824B"/>
+    </linearGradient>
+    <filter id="procShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#2B1E16" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="560" fill="url(#procBg1)"/>
+  <!-- Warm Sunlight Diagonal -->
+  <polygon points="0,0 500,0 800,560 180,560" fill="#FFFDF7" opacity="0.4"/>
+
+  <!-- Traditional Bamboo Winnowing Basket (Muram) -->
+  <g filter="url(#procShadow)" transform="translate(155, 85)">
+    <path d="M55,20 H435 C465,20 485,42 480,75 L445,345 C440,375 415,392 385,392 H105 C75,392 50,375 45,345 L10,75 C5,42 25,20 55,20 Z" fill="url(#muramWeave)" stroke="#7D5C2E" stroke-width="10"/>
+    <!-- Woven Diagonal Texture Lines -->
+    <path d="M60,55 H430 M55,110 H435 M55,165 H435 M60,220 H430 M65,275 H425 M70,330 H420" stroke="#9C7844" stroke-width="2" stroke-dasharray="14 8" opacity="0.55"/>
+
+    <!-- Sorted Heirloom Red-Skin Groundnuts & Sesame Seeds -->
+    <g fill="#A84C2C" stroke="#783219" stroke-width="1.5">
+      <ellipse cx="165" cy="145" rx="22" ry="14" transform="rotate(-18 165 145)"/>
+      <ellipse cx="220" cy="130" rx="21" ry="13.5" transform="rotate(24 220 130)"/>
+      <ellipse cx="275" cy="155" rx="23" ry="14" transform="rotate(-10 275 155)"/>
+      <ellipse cx="330" cy="138" rx="20" ry="13" transform="rotate(15 330 138)"/>
+      <ellipse cx="145" cy="198" rx="22" ry="14" transform="rotate(30 145 198)"/>
+      <ellipse cx="205" cy="188" rx="23" ry="14.5" transform="rotate(-22 205 188)"/>
+      <ellipse cx="260" cy="205" rx="21" ry="13" transform="rotate(12 260 205)"/>
+      <ellipse cx="318" cy="192" rx="22" ry="14" transform="rotate(-15 318 192)"/>
+      <ellipse cx="180" cy="245" rx="21" ry="13.5" transform="rotate(8 180 245)"/>
+      <ellipse cx="242" cy="252" rx="22" ry="14" transform="rotate(-28 242 252)"/>
+      <ellipse cx="305" cy="242" rx="20" ry="13" transform="rotate(20 305 242)"/>
+    </g>
+    <g fill="#E5C08D">
+      <ellipse cx="192" cy="162" rx="18" ry="11" transform="rotate(15 192 162)"/>
+      <ellipse cx="288" cy="175" rx="18" ry="11" transform="rotate(-20 288 175)"/>
+      <ellipse cx="228" cy="222" rx="19" ry="11.5" transform="rotate(25 228 222)"/>
+    </g>
+  </g>
+
+  <!-- Brass Inspection Sieve on Bottom Right -->
+  <g filter="url(#procShadow)" transform="translate(525, 315)">
+    <circle cx="95" cy="95" r="92" fill="#C8922B" stroke="#8A6115" stroke-width="6"/>
+    <circle cx="95" cy="95" r="76" fill="#2B211B"/>
+    <g fill="#FAF6EE">
+      <circle cx="65" cy="75" r="3"/><circle cx="85" cy="65" r="3"/><circle cx="110" cy="78" r="3"/>
+      <circle cx="72" cy="98" r="3"/><circle cx="98" cy="95" r="3"/><circle cx="122" cy="102" r="3"/>
+      <circle cx="82" cy="118" r="3"/><circle cx="108" cy="115" r="3"/>
+    </g>
+  </g>
+
+  <!-- Step Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="185" height="40" rx="20" fill="#1E3A2B"/>
+    <text x="92" y="25" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1.5">STEP 01 • SELECTION</text>
+  </g>
+</svg>
+

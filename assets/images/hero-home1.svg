@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <!-- Studio Backdrop Gradients -->
+    <linearGradient id="bgWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6EFE2"/>
+      <stop offset="55%" stop-color="#EAE0CE"/>
+      <stop offset="100%" stop-color="#DDD0B8"/>
+    </linearGradient>
+    <linearGradient id="sunBeam" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#F7E4B5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#C8922B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stoneSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2D5C1"/>
+      <stop offset="30%" stop-color="#D4C3AA"/>
+      <stop offset="100%" stop-color="#B8A386"/>
+    </linearGradient>
+    <!-- Wood Gradients for Vagai Chekku -->
+    <linearGradient id="vagaiWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B1B12"/>
+      <stop offset="28%" stop-color="#4A3020"/>
+      <stop offset="55%" stop-color="#5C3B28"/>
+      <stop offset="85%" stop-color="#362217"/>
+      <stop offset="100%" stop-color="#22140D"/>
+    </linearGradient>
+    <linearGradient id="pestleWood" x1="0%" y1="0%" x2="100%" y2="15%">
+      <stop offset="0%" stop-color="#3B2518"/>
+      <stop offset="40%" stop-color="#6A452E"/>
+      <stop offset="75%" stop-color="#462C1D"/>
+      <stop offset="100%" stop-color="#28180F"/>
+    </linearGradient>
+    <!-- Golden Oil Gradients -->
+    <linearGradient id="goldenOilBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C948"/>
+      <stop offset="45%" stop-color="#DC9E1F"/>
+      <stop offset="85%" stop-color="#B8790E"/>
+      <stop offset="100%" stop-color="#8F5906"/>
+    </linearGradient>
+    <radialGradient id="oilGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#FFE885" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#E5A92B" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#B8790E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="20%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="brassVessel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A6421"/>
+      <stop offset="35%" stop-color="#E5BA58"/>
+      <stop offset="65%" stop-color="#C89632"/>
+      <stop offset="100%" stop-color="#6E4E16"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#2B1E16" flood-opacity="0.22"/>
+    </filter>
+    <filter id="itemShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2B1E16" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Wall & Morning Sunlight Rays -->
+  <rect width="1200" height="640" fill="url(#bgWall)"/>
+  <polygon points="0,0 750,0 1200,640 280,640" fill="url(#sunBeam)"/>
+  
+  <!-- Subtle Arch Architectural Niche in Background -->
+  <path d="M120,640 V240 A260,260 0 0,1 640,240 V640 Z" fill="#E5D9C5" opacity="0.6"/>
+  <path d="M140,640 V250 A240,240 0 0,1 620,250 V640 Z" fill="none" stroke="#C8922B" stroke-width="1.5" stroke-opacity="0.35"/>
+
+  <!-- Botanical Palm & Neem Shadow Overlay on Wall -->
+  <g opacity="0.08" fill="#1E3A2B">
+    <path d="M880,40 C960,110 1090,130 1200,90 L1200,0 L880,0 Z"/>
+    <ellipse cx="960" cy="140" rx="140" ry="22" transform="rotate(-18 960 140)"/>
+    <ellipse cx="1010" cy="195" rx="160" ry="20" transform="rotate(-12 1010 195)"/>
+    <ellipse cx="1050" cy="250" rx="150" ry="18" transform="rotate(-6 1050 250)"/>
+  </g>
+
+  <!-- Travertine & Linen Tabletop Surface -->
+  <rect x="0" y="620" width="1200" height="280" fill="url(#stoneSurface)"/>
+  <line x1="0" y1="620" x2="1200" y2="620" stroke="#C5B297" stroke-width="2"/>
+  <!-- Handwoven Linen Runner -->
+  <path d="M80,660 L1120,660 L1180,830 L20,830 Z" fill="#FAF6EE" opacity="0.82"/>
+  <path d="M90,672 L1110,672" stroke="#D8C8B0" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <path d="M35,815 L1165,815" stroke="#D8C8B0" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: Traditional Wooden Marachekku (Mortar & Pestle Oil Press) -->
+  <g filter="url(#softShadow)" transform="translate(130, 175)">
+    <!-- Rotating Wooden Arm / Beam -->
+    <path d="M185,155 L420,215 L412,242 L175,182 Z" fill="url(#pestleWood)"/>
+    <circle cx="195" cy="170" r="14" fill="#C8922B" stroke="#4A3020" stroke-width="3"/>
+    <!-- Heavy Seasoned Wooden Pestle (Ulakkai) -->
+    <path d="M210,15 C228,12 246,24 242,46 L205,260 L142,260 L182,38 C185,20 196,16 210,15 Z" fill="url(#pestleWood)"/>
+    <!-- Brass Decorative Bands on Pestle -->
+    <rect x="174" y="65" width="60" height="10" rx="3" transform="rotate(10 204 70)" fill="url(#brassVessel)"/>
+    <rect x="166" y="115" width="62" height="8" rx="3" transform="rotate(10 197 119)" fill="url(#brassVessel)"/>
+
+    <!-- Crushed Oilseeds & Golden Foam at Mortar Rim -->
+    <ellipse cx="175" cy="260" rx="112" ry="26" fill="#3B2313"/>
+    <ellipse cx="175" cy="262" rx="96" ry="18" fill="#D99B26" opacity="0.85"/>
+
+    <!-- Carved Vagai Wood Mortar Body (Ural) -->
+    <path d="M55,260 H295 L268,485 C264,508 242,522 216,522 H134 C108,522 86,508 82,485 L55,260 Z" fill="url(#vagaiWood)"/>
+    <!-- Carved Traditional Wood Rings -->
+    <path d="M50,252 H300 C306,252 310,257 310,263 V276 C310,282 306,286 300,286 H50 C44,286 40,282 40,276 V263 C40,257 44,252 50,252 Z" fill="#3A2417" stroke="#6A452E" stroke-width="1.5"/>
+    <rect x="66" y="345" width="218" height="14" rx="4" fill="url(#brassVessel)" opacity="0.85"/>
+    <rect x="75" y="435" width="200" height="12" rx="4" fill="url(#brassVessel)" opacity="0.75"/>
+
+    <!-- Wooden & Brass Oil Spout (kombu) Pouring Golden Oil -->
+    <path d="M272,385 L375,405 L368,426 L268,410 Z" fill="url(#brassVessel)"/>
+    <!-- Flowing Stream of Pure Golden Cold-Pressed Oil -->
+    <path d="M370,415 Q405,425 408,470 L408,560 L394,560 L394,468 Q392,432 366,422 Z" fill="url(#goldenOilBody)"/>
+    <path d="M401,435 L401,555" stroke="#FFF4B8" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Brass Receiving Bowl Under Spout -->
+  <g filter="url(#itemShadow)" transform="translate(475, 705)">
+    <ellipse cx="55" cy="12" rx="52" ry="14" fill="#5A3E12"/>
+    <ellipse cx="55" cy="14" rx="46" ry="11" fill="url(#goldenOilBody)"/>
+    <path d="M3,12 H107 L95,58 C91,70 76,78 55,78 C34,78 19,70 15,58 L3,12 Z" fill="url(#brassVessel)"/>
+    <ellipse cx="55" cy="14" rx="30" ry="5" fill="#FFE885" opacity="0.6"/>
+  </g>
+
+  <!-- CENTER-RIGHT: Hero Artisanal Glass Bottle of Marachekku Cold-Pressed Oil -->
+  <g filter="url(#softShadow)" transform="translate(625, 195)">
+    <!-- Warm Ambient Golden Glow Behind Bottle -->
+    <circle cx="135" cy="330" r="190" fill="url(#oilGlow)"/>
+
+    <!-- Wooden Cork & Neck Collar -->
+    <rect x="106" y="10" width="58" height="34" rx="8" fill="url(#vagaiWood)"/>
+    <rect x="112" y="44" width="46" height="18" fill="#D9C7AE"/>
+    <!-- Glass Neck -->
+    <path d="M108,56 H162 V135 C162,155 235,180 245,235 V520 C245,545 225,562 198,562 H72 C45,562 25,545 25,520 V235 C35,180 108,155 108,135 Z" fill="#FFFDF9" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Luminous Golden Oil Inside Bottle -->
+    <path d="M109,138 H161 C164,158 233,182 241,235 V516 C241,539 222,556 196,556 H74 C48,556 29,539 29,516 V235 C37,182 106,158 109,138 Z" fill="url(#goldenOilBody)"/>
+    <!-- Liquid Meniscus at Neck -->
+    <ellipse cx="135" cy="138" rx="26" ry="6" fill="#FFE885"/>
+    <!-- Internal Golden Refraction Glow -->
+    <ellipse cx="145" cy="390" rx="75" ry="130" fill="url(#oilGlow)"/>
+
+    <!-- Glass Specular Highlights -->
+    <path d="M42,240 V510" stroke="url(#glassHighlight)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M226,240 V510" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-opacity="0.45"/>
+    <path d="M52,205 Q85,175 114,150" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none" stroke-opacity="0.5"/>
+
+    <!-- Heritage Brand Label on Bottle -->
+    <g transform="translate(46, 265)">
+      <rect x="0" y="0" width="178" height="215" rx="6" fill="#FAF6EE" stroke="#C8922B" stroke-width="2"/>
+      <rect x="7" y="7" width="164" height="201" rx="3" fill="none" stroke="#1E3A2B" stroke-width="1" stroke-opacity="0.4"/>
+      <!-- Top Header Band -->
+      <rect x="18" y="20" width="142" height="22" rx="3" fill="#1E3A2B"/>
+      <text x="89" y="35" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="9.5" font-weight="bold" letter-spacing="1.8">MARACHEKKU NATURALS</text>
+      
+      <!-- Emblem Circle -->
+      <circle cx="89" cy="70" r="18" fill="#F2EAD9" stroke="#C8922B" stroke-width="1.5"/>
+      <path d="M89,58 C89,58 81,67 81,73 C81,77.5 84.5,81 89,81 C93.5,81 97,77.5 97,73 C97,67 89,58 89,58 Z" fill="#C8922B"/>
+
+      <text x="89" y="110" text-anchor="middle" fill="#2B1E16" font-family="Georgia, serif" font-size="16" font-weight="bold">WOOD-PRESSED</text>
+      <text x="89" y="130" text-anchor="middle" fill="#1E3A2B" font-family="Georgia, serif" font-size="15" font-weight="bold">GOLDEN OIL</text>
+      <line x1="45" y1="142" x2="133" y2="142" stroke="#C8922B" stroke-width="1.2"/>
+      <text x="89" y="160" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="9.5" letter-spacing="1.2">100% UNREFINED • RAW</text>
+      <text x="89" y="176" text-anchor="middle" fill="#5C7052" font-family="Georgia, serif" font-style="italic" font-size="10">Traditional Vagai Chekku</text>
+      <text x="89" y="196" text-anchor="middle" fill="#2B1E16" font-family="sans-serif" font-size="9" font-weight="bold" letter-spacing="1">1000 ML</text>
+    </g>
+  </g>
+
+  <!-- Secondary 500ml Bottle Slightly Behind Right -->
+  <g filter="url(#itemShadow)" transform="translate(885, 345)">
+    <rect x="65" y="12" width="38" height="24" rx="5" fill="url(#vagaiWood)"/>
+    <path d="M66,36 H102 V88 C102,102 152,122 158,160 V365 C158,382 144,395 125,395 H43 C24,395 10,382 10,365 V160 C16,122 66,102 66,88 Z" fill="url(#goldenOilBody)" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M22,165 V355" stroke="url(#glassHighlight)" stroke-width="9" stroke-linecap="round"/>
+    <rect x="26" y="185" width="116" height="135" rx="4" fill="#1E3A2B" stroke="#C8922B" stroke-width="1.5"/>
+    <text x="84" y="218" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="8" letter-spacing="1.2">MARACHEKKU</text>
+    <text x="84" y="246" text-anchor="middle" fill="#F7C948" font-family="Georgia, serif" font-size="13" font-weight="bold">SESAME OIL</text>
+    <text x="84" y="264" text-anchor="middle" fill="#EBE0CB" font-family="Georgia, serif" font-style="italic" font-size="10">Nallennai</text>
+    <line x1="48" y1="276" x2="120" y2="276" stroke="#C8922B" stroke-width="1"/>
+    <text x="84" y="298" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="8.5" letter-spacing="1">500 ML</text>
+  </g>
+
+  <!-- FOREGROUND RIGHT: Fresh Split White Coconut Half -->
+  <g filter="url(#itemShadow)" transform="translate(945, 645)">
+    <!-- Outer Brown Husk -->
+    <path d="M10,55 C10,125 180,125 180,55 Z" fill="#4A2E1B"/>
+    <path d="M16,55 C16,115 174,115 174,55 Z" fill="#633F26"/>
+    <!-- Thick Pure White Coconut Kernel -->
+    <ellipse cx="95" cy="55" rx="85" ry="32" fill="#FAF6EE" stroke="#5C3B28" stroke-width="5"/>
+    <ellipse cx="95" cy="55" rx="64" ry="20" fill="#EAE2D6"/>
+    <ellipse cx="90" cy="57" rx="52" ry="14" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+
+  <!-- FOREGROUND LEFT: Raw Shelled Groundnuts & Sesame Bowl -->
+  <g filter="url(#itemShadow)" transform="translate(160, 720)">
+    <!-- Terracotta Bowl of Sesame Seeds -->
+    <path d="M0,18 H130 L114,68 C110,78 92,84 65,84 C38,84 20,78 16,68 L0,18 Z" fill="#8C4A27"/>
+    <ellipse cx="65" cy="18" rx="65" ry="16" fill="#5A2E16"/>
+    <ellipse cx="65" cy="19" rx="58" ry="13" fill="#E8D8B9"/>
+    <!-- Sesame Seed Texture Dots -->
+    <g fill="#2B1E16" opacity="0.75">
+      <ellipse cx="45" cy="17" rx="3" ry="1.5" transform="rotate(20 45 17)"/>
+      <ellipse cx="62" cy="14" rx="3" ry="1.5" transform="rotate(-15 62 14)"/>
+      <ellipse cx="78" cy="20" rx="3" ry="1.5" transform="rotate(35 78 20)"/>
+      <ellipse cx="55" cy="22" rx="3" ry="1.5" transform="rotate(10 55 22)"/>
+      <ellipse cx="88" cy="16" rx="3" ry="1.5" transform="rotate(-25 88 16)"/>
+      <ellipse cx="35" cy="20" rx="3" ry="1.5"/>
+    </g>
+    <!-- Scattered Red-Skin Groundnuts on Linen -->
+    <g fill="#A65233" stroke="#78361E" stroke-width="1">
+      <ellipse cx="165" cy="62" rx="14" ry="9" transform="rotate(-15 165 62)"/>
+      <ellipse cx="192" cy="68" rx="13" ry="8.5" transform="rotate(22 192 68)"/>
+      <ellipse cx="178" cy="78" rx="14" ry="9" transform="rotate(5 178 78)"/>
+      <ellipse cx="215" cy="64" rx="12" ry="8" transform="rotate(-28 215 64)"/>
+      <ellipse cx="235" cy="74" rx="14" ry="9" transform="rotate(14 235 74)"/>
+    </g>
+  </g>
+</svg>
+

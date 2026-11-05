@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E9D7"/>
+      <stop offset="100%" stop-color="#DECDB2"/>
+    </linearGradient>
+    <linearGradient id="woodGrain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#362215"/>
+      <stop offset="40%" stop-color="#5E3C26"/>
+      <stop offset="75%" stop-color="#452B1B"/>
+      <stop offset="100%" stop-color="#29190F"/>
+    </linearGradient>
+    <linearGradient id="oilAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8CB46"/>
+      <stop offset="55%" stop-color="#D8961C"/>
+      <stop offset="100%" stop-color="#9A6408"/>
+    </linearGradient>
+    <linearGradient id="brassSpout" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECC366"/>
+      <stop offset="50%" stop-color="#C8922B"/>
+      <stop offset="100%" stop-color="#785314"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#2B1E16" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="700" fill="url(#warmBg)"/>
+  <circle cx="680" cy="180" r="240" fill="#FFFDF7" opacity="0.5"/>
+  
+  <!-- Rustic Teakwood Bench -->
+  <rect x="0" y="500" width="900" height="200" fill="#4A3221"/>
+  <rect x="0" y="500" width="900" height="16" fill="#63442E"/>
+
+  <!-- Close-up of Vagai Wood Chekku Drum & Brass Spout on Left -->
+  <g filter="url(#cardShadow)" transform="translate(-40, 60)">
+    <path d="M0,40 H340 L310,450 H0 Z" fill="url(#woodGrain)"/>
+    <!-- Wood Grain Rings -->
+    <rect x="0" y="120" width="332" height="18" fill="url(#brassSpout)"/>
+    <rect x="0" y="320" width="318" height="16" fill="url(#brassSpout)"/>
+    <!-- Brass Spout -->
+    <path d="M312,235 L455,262 L446,294 L306,268 Z" fill="url(#brassSpout)"/>
+    <!-- Pure Oil Stream -->
+    <path d="M442,280 Q475,295 478,340 L478,490 L460,490 L460,340 Q458,302 435,288 Z" fill="url(#oilAmber)"/>
+    <line x1="469" y1="305" x2="469" y2="480" stroke="#FFF5BD" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Settling Glass Decanter Receiving Oil -->
+  <g filter="url(#cardShadow)" transform="translate(365, 340)">
+    <path d="M30,0 H110 L130,190 C132,208 118,220 98,220 H42 C22,220 8,208 10,190 L30,0 Z" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M18,95 H122 L128,188 C130,204 116,216 96,216 H44 C24,216 10,204 12,188 L18,95 Z" fill="url(#oilAmber)"/>
+    <ellipse cx="70" cy="95" rx="52" ry="10" fill="#FFE680"/>
+  </g>
+
+  <!-- Trio of Bottled Oils on Right -->
+  <g filter="url(#cardShadow)" transform="translate(555, 195)">
+    <!-- Bottle 1 -->
+    <rect x="44" y="0" width="34" height="22" rx="4" fill="#2B1E16"/>
+    <path d="M45,22 H77 V68 C77,82 118,98 122,130 V330 C122,345 110,356 95,356 H27 C12,356 0,345 0,330 V130 C4,98 45,82 45,68 Z" fill="url(#oilAmber)" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="14" y="155" width="94" height="125" rx="4" fill="#FAF6EE" stroke="#1E3A2B" stroke-width="1.5"/>
+    <rect x="22" y="168" width="78" height="16" fill="#1E3A2B"/>
+    <text x="61" y="179" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="6.5" letter-spacing="1">MARACHEKKU</text>
+    <text x="61" y="210" text-anchor="middle" fill="#2B1E16" font-family="Georgia, serif" font-size="11" font-weight="bold">GROUNDNUT</text>
+    <text x="61" y="226" text-anchor="middle" fill="#1E3A2B" font-family="Georgia, serif" font-size="10">COLD-PRESSED</text>
+    <text x="61" y="260" text-anchor="middle" fill="#5A4A3E" font-family="sans-serif" font-size="8">1000 ML</text>
+
+    <!-- Bottle 2 -->
+    <g transform="translate(145, 35)">
+      <rect x="38" y="0" width="30" height="20" rx="4" fill="#2B1E16"/>
+      <path d="M39,20 H67 V60 C67,72 104,88 108,116 V295 C108,308 98,318 84,318 H22 C8,318 0,308 0,295 V116 C4,88 39,72 39,60 Z" fill="#E8C96B" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="12" y="138" width="84" height="110" rx="4" fill="#1E3A2B" stroke="#C8922B" stroke-width="1.5"/>
+      <text x="54" y="168" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="6" letter-spacing="1">MARACHEKKU</text>
+      <text x="54" y="196" text-anchor="middle" fill="#F8CB46" font-family="Georgia, serif" font-size="10.5" font-weight="bold">COCONUT OIL</text>
+      <text x="54" y="232" text-anchor="middle" fill="#FAF6EE" font-family="sans-serif" font-size="7.5">500 ML</text>
+    </g>
+  </g>
+</svg>
+

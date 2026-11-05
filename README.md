@@ -1,2 +1,0 @@
-# Cold_Pressed_Oil_Mill
-Automated website repository for Cold_Pressed_Oil_Mill
