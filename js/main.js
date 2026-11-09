@@ -276,7 +276,7 @@
             </div>
             <div class="product-actions">
               <button type="button" class="btn btn-secondary btn-sm" data-open-product="${product.id}">Details</button>
-              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="${product.id}">+ Order / Sample</button>
+              <button type="button" class="btn btn-primary btn-sm" data-add-to-cart="${product.id}">+ Order</button>
             </div>
           </div>
         </div>
@@ -604,8 +604,8 @@
 
     const galleryImages = [
       { src: product.image, label: "Retail Glass Bottle" },
-      { src: product.secondaryImage || "assets/images/product-groundnut-tin.svg", label: "5L / 15L Bulk Tin" },
-      { src: product.processImage || "assets/images/process-3-extraction.svg", label: "Chekku Extraction" }
+      { src: product.secondaryImage || "assets/images/product-groundnut-tin.jpg", label: "5L / 15L Bulk Tin" },
+      { src: product.processImage || "assets/images/process-3-extraction.jpg", label: "Chekku Extraction" }
     ];
 
     const sizeButtonsHTML = product.sizes
