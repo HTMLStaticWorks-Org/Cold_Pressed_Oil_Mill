@@ -766,11 +766,17 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 16px rgba(223, 165, 58, 0.18);
 }
 
-[data-theme="dark"] .hero-badge-dot,
-[data-theme="dark"] .hero-badge-icon {
+[data-theme="dark"] .hero-badge-dot {
   background-color: #F3CA65;
-  color: #F3CA65;
   box-shadow: 0 0 8px rgba(243, 202, 101, 0.6);
+}
+
+[data-theme="dark"] .hero-badge-icon {
+  background-color: transparent !important;
+  color: #F5C042 !important;
+  fill: #F5C042 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 5px rgba(245, 192, 66, 0.85));
 }
 
 .hero-title {
@@ -933,6 +939,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: clamp(1.04rem, 1.25vw, 1.2rem);
   margin-block: var(--space-5) var(--space-8);
   max-width: 600px;
+}
+
+.hero-home2 .btn-secondary {
+  color: #FAF6EE !important;
+  border: 1.5px solid rgba(250, 246, 238, 0.6) !important;
+  background-color: transparent !important;
+  transition: all var(--transition-base);
+}
+
+.hero-home2 .btn-secondary:hover {
+  background-color: var(--color-gold) !important;
+  color: #1A1208 !important;
+  border-color: var(--color-gold) !important;
+  box-shadow: 0 4px 16px rgba(229, 185, 92, 0.45) !important;
 }
 
 .heritage-journal-card {
@@ -1607,6 +1627,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  background-color: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .process-number-badge {
