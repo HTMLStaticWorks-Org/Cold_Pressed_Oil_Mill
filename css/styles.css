@@ -2543,6 +2543,69 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Home-2 Raw Material Provenance: balanced intro + 4-column aligned seed cards */
+.provenance-intro {
+  gap: var(--space-10);
+  align-items: center;
+  margin-bottom: var(--space-10);
+}
+
+.provenance-showcase-frame {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-bg-elevated);
+}
+
+.provenance-showcase-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.provenance-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
+.provenance-cards-grid .benefit-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-5);
+}
+
+.provenance-cards-grid .about-card-media {
+  margin-bottom: var(--space-3);
+}
+
+.provenance-tag {
+  align-self: flex-start;
+  margin-bottom: var(--space-2);
+}
+
+.provenance-cards-grid .benefit-card h3 {
+  font-size: clamp(1rem, 1.15vw, 1.18rem) !important;
+  margin-bottom: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .provenance-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .provenance-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Mobile responsive button safeguard */
 @media (max-width: 600px) {
   .btn-fluid-mobile {
@@ -2570,6 +2633,11 @@ h1, h2, h3, h4, h5, h6 {
 [dir="rtl"] .dropdown-link-tag {
   margin-left: 0;
   margin-right: auto;
+}
+
+[dir="rtl"] .provenance-tag {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 [dir="rtl"] .dropdown-menu {
