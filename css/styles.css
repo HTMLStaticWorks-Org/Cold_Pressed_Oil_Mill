@@ -867,10 +867,35 @@ h1, h2, h3, h4, h5, h6 {
   height: 44px;
   border-radius: var(--radius-sm);
   background-color: var(--color-gold-subtle);
+  border: 1px solid rgba(200, 146, 43, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.hero-floating-icon img,
+.hero-floating-icon svg {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+[data-theme="dark"] .hero-floating-icon {
+  background-color: rgba(223, 165, 58, 0.2);
+  border-color: rgba(229, 185, 92, 0.48);
+  box-shadow: 0 0 12px rgba(223, 165, 58, 0.16);
+}
+
+[data-theme="dark"] .hero-floating-icon img,
+[data-theme="dark"] img[src*="chekku-press.svg"] {
+  filter: brightness(0) invert(88%) sepia(45%) saturate(800%) hue-rotate(5deg) drop-shadow(0 0 4px rgba(243, 202, 101, 0.45));
+}
+
+[data-theme="dark"] .hero-floating-icon svg {
+  stroke: #F3CA65;
 }
 
 .hero-floating-card h4 {
